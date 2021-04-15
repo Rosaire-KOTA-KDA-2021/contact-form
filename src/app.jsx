@@ -10,12 +10,26 @@ class App extends React.Component{
         super(props)
         this.state = {
             "contacts": [
-                { id: 1, firstname: "rosaire", lastname: "Kota", biography: "lorem" },
-                { id: 2, firstname: "jules", lastname: "Omba", biography: "lorem" },
-                {id:3,firstname:"Marc",lastname:"Kulenda",biography:"lorem"}
+                { id: 1, firstname: "rosaire", lastname: "Kota", biography: "lorem", "avatar":"https://avatars.githubusercontent.com/u/48548004?v=4" },
+                { id: 2, firstname: "jules", lastname: "Omba", biography: "lorem", "avatar":""},
+                {id:3,firstname:"Marc",lastname:"Kulenda",biography:"lorem", "avater":""}
             ]
         }
     }
+    handleDelete= id=>{
+                const contactsclone= this.state.contacts.slice();
+                const index= contactsclone.findIndex((contactsclone)=>{
+                    return contactsclone.id===id;
+                });
+                contactsclone.splice(index, 1);
+                this.setState({contacts: contactsclone});
+        }
+    handleCreate=()=>{
+                const contactsclone= this.state.contacts.slice();
+                contactsclone.push({"id":"", "firstname":"", "lastname":"", "biography":"", "avatar":""});
+                this.setState({contacts: contactsclone});
+    }
+    
 
     render() {
         return <>
