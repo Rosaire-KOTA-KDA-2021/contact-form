@@ -21,7 +21,9 @@ class App extends React.Component{
         return <>
         <TopSection/>
          <main className="container row">
-                <Card className="medium-col-12" contacts={this.state.contacts }/>        
+                <div className=" small-col-6medium-col-6">1</div>
+                <div className=" small-col-6medium-col-6">2</div>
+                {/* <Card className="small-col-6 medium-col-6" contacts={this.state.contacts }/>         */}
          </main>
         </>
     }
