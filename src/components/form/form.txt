@@ -1,0 +1,53 @@
+ <h2>htmlFormulaire de contact</h2>
+                <form action="" method="post" className="row htmlForm-group" enctype="multipart/htmlForm-data">
+                    <div className="medium-col-12">
+                        <label htmlFor="firstname"className="labelMessage">Pénom</label>
+                        <input type="text" name="firstname" className="htmlForm-control" id="first-name" />
+
+                    </div>
+                    <div className="medium-col-12">
+                        <label htmlFor="name">Nom</label>
+                        <input type="text" name="name" className="htmlForm-control" id="last-name" />
+                    </div>
+                    <div className="medium-col-12">
+                        <label htmlFor="group">Groupe</label>
+                        <select name="group" className="htmlForm-control" id="group">
+                            <option value="" disabled selected>Choisir le groupe</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div className="medium-col-12">
+                        <label htmlFor="biography">Biog</label>
+                        <textarea name="" className="htmlForm-control" id="biography" cols="30" rows="5"></textarea>
+                    </div>
+                    <div className="medium-col-12">
+                        <div className="row">
+                            <div className="medium-col-6">
+                                <label htmlFor="image-file" className="choice-label-photo"><i className="far fa-image"></i>&nbsp;
+                                    Choisir un
+                                    fichier</label>
+                                <input type="file" className="htmlForm-control" alt="" id="image-file" accept="image/*"
+                                    multiple="false" className="img-file" />
+                            </div>
+                            <div className="medium-col-6">
+                                <img src="" alt="Aucun fichier Selectionné" srcset="" id="image-preview-avatar"
+                                    className="img-circle img-rounded" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="medium-col-2">
+                        <button type="submit" className="btn btn-primary" id="btn-create">
+                            Créer
+                        </button>
+                    </div>
+                    <div className="medium-col-2">
+                        <button type="reset" className="btn btn-danger" id="btn-reset">
+                            Réinit.
+                        </button>
+                    </div>
+                </htmlForm>
+            </div>
