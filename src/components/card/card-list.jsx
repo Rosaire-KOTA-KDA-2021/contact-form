@@ -1,6 +1,5 @@
 import Bouton from "../button/bouton";
 import ImageAvatar from "../image/image";
-import Biography from "../textDescription/biography";
 import profile from "../../assets/images/profile.svg";
 
 const CardList = (props) => {
